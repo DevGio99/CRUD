@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="script.js" defer></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+  <div class="container">
+    <div class="containerHeader">
+      <span>Cadastro de Clientes</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Celular</th>
+            <th>E-mail</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+     
+        <form>
+          <label for="c-nome">Nome</label>
+          <input id="c-nome" type="text" required />
+  
+          <label for="c-tel">Celular</label>
+          <input id="c-tel" type="tel" required />
+  
+          <label for="c-email">E-mail</label>
+          <input id="c-email" type="e-mail" required />
+          <button  id="btnSalvar" >Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>
